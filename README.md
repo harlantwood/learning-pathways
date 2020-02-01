@@ -39,3 +39,26 @@ The front-end stack being used (see package.json):
 * [LitElement](https://lit-element.polymer-project.org/)
 * [GraphQL](https://graphql.org/)
 * [ApolloClient](https://github.com/apollographql/apollo-client)
+
+### DEV
+
+I make an alias to load love + my bash profile:
+
+```
+alias love='nix-shell --command '\''. ~/.bash_profile; return'\'' https://holochain.love'
+```
+
+in one terminal:
+
+```
+love
+sim2h_server -p 9000
+```
+
+in another:
+
+```
+love
+hc package
+hc test
+```
