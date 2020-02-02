@@ -19,7 +19,7 @@ process.on("unhandledRejection", error => {
   process.exit(1)
 });
 
-const dnaPath = path.join(__dirname, "../dist/holochain-devcamp-learning-pathways.dna.json");
+const dnaPath = path.join(__dirname, "../dist/learning-pathways.dna.json");
 
 const orchestrator = new Orchestrator({
   middleware: combine(
