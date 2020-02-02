@@ -147,7 +147,8 @@ orchestrator.registerScenario("Scenario4: Update course title", async (s, t) => 
     title: "course title updated",
     timestamp: 123,
     teacher_address: alice.instance("course_dna").agentAddress,
-    modules: []
+    modules: [],
+    foo: "bar"
   });
 
 
