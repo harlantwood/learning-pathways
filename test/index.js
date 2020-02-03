@@ -35,10 +35,10 @@ const conductorConfig = Config.gen(
     network: {
       type: "sim2h",
       sim2h_url: "ws://localhost:9000"
-    }
+    },
+    logger: Config.logger({ type: "error" }),
   }
 );
-
 
 orchestrator.registerScenario("Scenario1: Zome is working", async (s, t) => {
   const { alice, bob } = await s.players(
@@ -134,7 +134,6 @@ orchestrator.registerScenario("Scenario3: Delete course", async (s, t) => {
   t.deepEqual(get_entry_response, { Ok: null })
 
   await s.consistency();
-
 });
 
 
