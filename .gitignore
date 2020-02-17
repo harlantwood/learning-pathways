@@ -1,5 +1,6 @@
+.cargo/
+.hc
+/dna/dist/
+/sim2h.log
 node_modules/
 target/
-.hc
-.cargo/
-/sim2h.log
